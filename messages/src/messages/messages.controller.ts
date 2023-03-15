@@ -1,8 +1,9 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
+import { CreateMessageDto } from './dtos/create-message.dto';
 import { MessagesService } from './messages.service';
 
 @Controller("messages")
-export class AppController {
+export class MessagesController {
   constructor(private readonly messagesService: MessagesService) {}
 
   @Get()
@@ -16,7 +17,7 @@ export class AppController {
   }
 
   @Post()
-  createMessage(@Body() body: any): string {
+  createMessage(@Body() body: CreateMessageDto): string {
     console.log(body);
     return ""
   }
