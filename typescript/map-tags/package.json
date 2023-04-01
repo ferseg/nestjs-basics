@@ -1,0 +1,14 @@
+{
+  "name": "map-tags",
+  "version": "1.0.0",
+  "description": "Typescript test",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fernando Segovia",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@types/google.maps": "^3.52.4"
+  }
+}
